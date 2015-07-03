@@ -3,50 +3,105 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-    <!-- android:orientation ="vertical"设置布局的方向 -->
-    <!-- android:layout_height="fill_parent" 控制各人组件在布局中的相对大小 -->
+    <!--
+    线性布局分为水平线性和垂直线性布局，通过orientation 属性可以设置线性布局的方向，
+    gravity 属性用于控制布局中视图的位置
+    -->
     <LinearLayout
+        android:orientation ="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation = "vertical"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text = "red"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="#aa0000"
+            />
+        <TextView
+            android:text="tial"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#008080"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text = "blue"
+            android:background="#0000aa"
+            android:gravity="center_horizontal"
+            android:layout_weight = "1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text = "orgnge"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="#ffa500"
+            />
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="one"
+            android:layout_weight="1"
+            android:textSize="15pt"
+            android:gravity="center_vertical"
+            android:background="#00a00a"
+
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text ="two"
+            android:layout_weight="1"
+            android:textSize="15pt"
+            android:gravity="center_vertical"
+            android:background="#aa00aa"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text = "three"
+            android:layout_weight="1"
+            android:textSize="15pt"
+            android:gravity="center_vertical"
+            android:background="#a0a0a0"
+            />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="hello world"
-            android:textSize="18dp"
+            android:text = "four"
+            android:textSize="15pt"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="#aaaa00"
             />
-
-        <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:text="hello_world"
-        />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        >
-        <!-- android:gravity="right"表示Button组件向右对齐 -->
-        <Button
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="确认"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="取消"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="跳过"
+            android:textSize="15pt"
+            android:text = "five"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:background="#00aaaa"
             />
         </LinearLayout>
 
