@@ -1,108 +1,44 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
     >
-    <!--
-    线性布局分为水平线性和垂直线性布局，通过orientation 属性可以设置线性布局的方向，
-    gravity 属性用于控制布局中视图的位置
-    -->
-    <LinearLayout
-        android:orientation ="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text = "red"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            android:background="#aa0000"
-            />
-        <TextView
-            android:text="tial"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:background="#008080"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
-            />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="#00aa00"
+        />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center"
+        android:background="#aa0000"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:background="#00fff0"
+        />
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="#ff00ff"
+        />
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#f0FF0F"
+        />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text = "blue"
-            android:background="#0000aa"
-            android:gravity="center_horizontal"
-            android:layout_weight = "1"
-            />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text = "orgnge"
-            android:gravity="center_horizontal"
-            android:layout_weight="1"
-            android:background="#ffa500"
-            />
 
-        </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        >
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="one"
-            android:layout_weight="1"
-            android:textSize="15pt"
-            android:gravity="center_vertical"
-            android:background="#00a00a"
-
-            />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text ="two"
-            android:layout_weight="1"
-            android:textSize="15pt"
-            android:gravity="center_vertical"
-            android:background="#aa00aa"
-            />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text = "three"
-            android:layout_weight="1"
-            android:textSize="15pt"
-            android:gravity="center_vertical"
-            android:background="#a0a0a0"
-            />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text = "four"
-            android:textSize="15pt"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:background="#aaaa00"
-            />
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15pt"
-            android:text = "five"
-            android:layout_weight="1"
-            android:gravity="center_vertical"
-            android:background="#00aaaa"
-            />
-        </LinearLayout>
-
-</LinearLayout>
+</FrameLayout>
