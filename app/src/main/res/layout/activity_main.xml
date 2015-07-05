@@ -1,103 +1,46 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="fill_parent"
     android:layout_width="fill_parent"
-    android:orientation = "vertical"
     >
-    <!--在进行线性布局时，要先对整个屏幕上的控件的布局进行规划，然后再具体用代码实现-->
-    <!--设置上面的两个按钮   -->
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <!--设置左上面的两个按钮   -->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
 
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="左上按键"
-                android:layout_gravity="left"
-                />
-            </LinearLayout><!--设置左上面的两个按钮   -->
-        <!--设置右上面的两个按钮   -->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="右上按键"
-                android:layout_gravity="right"
-                />
+    <!-- 相对布局 -->
 
-            </LinearLayout><!--设置右上面的两个按钮   -->
-        </LinearLayout>  <!--设置上面的两个按钮   -->
-    <!--设置中间的按键 -->
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_weight="1"
-        android:gravity="center"
-        >
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="中间按键"
-            />
-        </LinearLayout>    <!--设置中间的按键 -->
-    <!--设置下面的两个按键 -->
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        >
-        <!--设置左下面的按键 -->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:gravity="bottom|left"
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="左下按键"
-
-                />
-            </LinearLayout>        <!--设置左下面的按键 -->
-
-        <!--设置右下面的按键 -->
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:gravity="bottom"
-
-            >
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="右下按键"
-                android:layout_gravity="right"
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左上按键"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "中间按键"
+        android:layout_toRightOf="@+id/btn1"
+        android:layout_below="@+id/btn1"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="右上按键"
+        android:layout_toRightOf="@+id/btn2"
+        />
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="左下按键"
+        android:layout_below="@+id/btn2"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="右下按键"
+        android:layout_toRightOf="@+id/btn2"
+        android:layout_below="@+id/btn2"
+        />
 
 
-                />
-        </LinearLayout>        <!--设置右下面的按键 -->
 
-        </LinearLayout>    <!--设置下面的两个按键 -->
-
-</LinearLayout>
+</RelativeLayout>
